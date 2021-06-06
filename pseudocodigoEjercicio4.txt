@@ -1,0 +1,24 @@
+Algoritmo Ejercicio4
+	contadormayor <- 0
+	contadormenor <- 0
+	i <- 1
+	muestra <- 20
+	Mientras (i<=muestra) Hacer
+		numero <- Aleatorio(0,90)
+		Escribir 'La edad de la persona es: ',numero
+		Si (i=1) Entonces
+			contadormayor <- numero
+			contadormenor <- numero
+		SiNo
+			Si (numero>contadormayor) Entonces
+				contadormayor <- numero
+			FinSi
+			Si (numero<contadormenor) Entonces
+				contadormenor <- numero
+			FinSi
+		FinSi
+		i <- i+1
+	FinMientras
+	Escribir 'La persona de mayor edad es: ',contadormayor
+	Escribir 'La persona de menor edad es: ',contadormenor
+FinAlgoritmo
